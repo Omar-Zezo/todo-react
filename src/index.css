@@ -1,13 +1,129 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #0f1620;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.container {
+  width: 60%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.todo-form {
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-input {
+  width: 80%;
+  height: 50px;
+  padding: 8px 5px;
+  border: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  color: #fff;
+}
+
+.todo-button {
+  display: inline-block;
+  width: 19%;
+  height: 50px;
+  padding: 8px 5px;
+  border: none;
+  background: -webkit-linear-gradient(right, #209a45, #2ae112);
+  color: #fff;
+  font-weight: bold;
+}
+
+.todo-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-wraper {
+  width: 90%;
+  margin-top: 20px;
+}
+
+.todo {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  background-image: radial-gradient(
+    circle 897px at 9% 80.3%,
+    rgba(55, 60, 245, 1) 0%,
+    rgba(234, 161, 15, 0.9) 100.2%
+  );
+  margin-bottom: 10px;
+}
+
+.todo:nth-of-type(2),
+.todo:nth-of-type(5) {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(237, 3, 32, 0.87) 20.8%,
+    rgba(242, 121, 1, 0.84) 74.4%
+  );
+}
+
+.todo:nth-of-type(3),
+.todo:nth-of-type(6) {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(14, 174, 87, 1) 0%,
+    rgba(12, 116, 117, 1) 90%
+  );
+}
+
+.todo:nth-of-type(4),
+.todo:nth-of-type(8) {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(0, 152, 155, 1) 0.1%,
+    rgba(0, 94, 120, 1) 94.2%
+  );
+}
+
+.todo p {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.todo .todo-control {
+  margin-left: auto;
+}
+
+.todo .todo-control button {
+  border: none;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.todo .todo-control button:last-of-type {
+  margin-left: 5px;
 }
